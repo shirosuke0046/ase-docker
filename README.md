@@ -7,7 +7,7 @@ mkdir ./arkdata
 docker run -d --name ark-survival-evolved \
     --restart=always \
     -p 7777:7777/udp \
-    -p 7778:7778/udp \
+    -p 7778:7778/udp \  # PORT + 1
     -p 27015:25015/udp \
     -p 27020:25020/tcp \  # for RCONPort
     -v ./arkdata:/arkdata \
