@@ -1,10 +1,19 @@
 # ase-docker
 
+## Build
+
+```bash
+git clone https://github.com/shirosuke0046/ase-docker.git
+cd ase-docker
+
+docker build . -t shirosuke0046/ark-survival-evolved
+```
+
 ## Usage
 
 ```bash
 mkdir ./arkdata
-chown 0:0 ./arkdata
+chmod 777 ./arkdata
 docker run -d --name ark-survival-evolved \
     --restart=always \
     -p 7777:7777/udp \
