@@ -4,6 +4,7 @@
 
 ```bash
 mkdir ./arkdata
+chown 0:0 ./arkdata
 docker run -d --name ark-survival-evolved \
     --restart=always \
     -p 7777:7777/udp \
