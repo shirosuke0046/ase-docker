@@ -7,7 +7,7 @@ RUN apt update -y && apt upgrade -y && \
 USER steam
 WORKDIR /home/steam
 
-RUN /home/steam/steamcmd/steamcmd.sh +force_install_dir /home/steam/ARK +login anonymous +app_update 376030 +quit && \
+RUN /home/steam/steamcmd/steamcmd.sh +force_install_dir /home/steam/ARK +login anonymous +app_update 376030 -beta preaquatica +quit && \
     ln -s /home/steam/steamcmd /home/steam/ARK/Engine/Binaries/ThirdParty/SteamCMD/Linux && \
     ln -s /home/steam/Steam/steamapps /home/steam/ARK/Engine/Binaries/ThirdParty/SteamCMD/Linux/steamapps && \
     ln -s /arkdata /home/steam/ARK/ShooterGame/Saved

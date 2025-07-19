@@ -34,7 +34,7 @@ CMD+=("-automanagedmods")
 cd $ARK_DIR/ShooterGame/Binaries/Linux || exit
 
 # Update server
-/home/steam/steamcmd/steamcmd.sh +force_install_dir "$ARK_DIR" +login anonymous +app_update 376030 +quit
+/home/steam/steamcmd/steamcmd.sh +force_install_dir "$ARK_DIR" +login anonymous +app_update 376030 -beta preaquatica +quit
 
 # Run
 "${CMD[@]}"
